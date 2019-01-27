@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  background: white;
+  color: black; }
+  body .btn {
+    background: #01ACAC;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    display: block;
+    text-align: center; }
+  body h1 {
+    font-size: 24px; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header_background_v1.jpg) no-repeat center center;
+  background-size: cover;
+  text-transform: uppercase;
+  position: relative; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo {
+      width: 15%; }
+      header .top-wrapper .logo img {
+        width: 100%; }
+    header .top-wrapper nav a {
+      display: inline-block;
+      color: white;
+      padding: 20px 8vw; }
+      header .top-wrapper nav a:nth-child(2) {
+        border-left: 2px solid #607D8B;
+        border-right: 2px solid #607D8B; }
+  header section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    header section h1 {
+      color: white; }
+    header section .btn {
+      width: 200px;
+      height: 50px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+  main p {
+    line-height: 1.5rem;
+    font-size: 15px; }
+  main .btn {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: auto; }
+  main .toolbar {
+    margin: 20px 0; }
+    main .toolbar input {
+      display: block;
+      margin-left: auto;
+      padding: 10px;
+      background: transparent;
+      border: 1px solid #607D8B; }
+      main .toolbar input::placeholder {
+        color: black; }
+  main section h1 {
+    text-transform: uppercase;
+    text-align: right; }
+  main .post-list article {
+    background: #EFEFEF;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex; }
+    main .post-list article .post {
+      padding: 10px; }
+      main .post-list article .post .post-description {
+        border-bottom: 1px solid #607D8B;
+        color: #E90A03;
+        padding-bottom: 10px;
+        font-size: 13px; }
+      main .post-list article .post h3 {
+        text-transform: uppercase;
+        padding: 5px 0 0 0;
+        color: #0097A7; }
+  main .about {
+    margin: 40px 0;
+    padding: 10px; }
+    main .about p {
+      margin-bottom: 20px; }
+    main .about img {
+      width: 100%; }
+  main .contact-form h4 {
+    text-align: right;
+    text-transform: uppercase; }
+  main .contact-form form {
+    display: grid;
+    grid-template-areas: "a b" "c d" "e e" "f f";
+    gap: 3px 10px; }
+    main .contact-form form label {
+      color: #0097A7;
+      text-align: right;
+      margin-top: 20px; }
+      main .contact-form form label[for="name"] {
+        grid-area: a; }
+      main .contact-form form label[for="email"] {
+        grid-area: b; }
+      main .contact-form form label[for="quastuin"] {
+        grid-area: e; }
+    main .contact-form form input {
+      line-height: 2.5rem;
+      border: 1px solid #607D8B;
+      background: transparent; }
+      main .contact-form form input#text {
+        grid-area: c; }
+      main .contact-form form input#email {
+        grid-area: d; }
+    main .contact-form form textarea {
+      grid-area: f;
+      border: 1px solid #607D8B;
+      background: transparent; }
+  main .contact-form .btn {
+    margin-top: 20px; }
+
+footer {
+  margin: 15px; }
