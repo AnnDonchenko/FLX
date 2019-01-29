@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans';
+  font-size: .9rem;
+  background: #F3F3F3; }
+
+.wrapper {
+  min-width: 900px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.px-3 {
+  padding: 0 3%; }
+
+header {
+  background: url("../img/sample2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 740px;
+  color: #FFFFFF; }
+  header nav {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: flex-end; }
+    header nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: .8rem; }
+      header nav a:first-child {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-right: auto; }
+      header nav a:last-child {
+        margin-left: 3%; }
+      header nav a:hover {
+        color: #E8E8E8; }
+  header .brand-info {
+    text-align: center;
+    margin-top: 150px; }
+    header .brand-info h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-weight: 200; }
+      header .brand-info h1 span {
+        font-size: 5rem; }
+    header .brand-info p {
+      margin-top: 8px;
+      font-size: .9rem; }
+    header .brand-info .button-nav {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 165px; }
+      header .brand-info .button-nav button {
+        padding: 18px 80px;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid #FFFFFF;
+        color: inherit;
+        font-size: .9rem; }
+        header .brand-info .button-nav button:hover {
+          background: #097774; }
+
+main {
+  background: #F3F3F3; }
+  main .ying-yang {
+    position: relative;
+    height: 210px; }
+    main .ying-yang .triangle {
+      margin-top: -5px;
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100vw 200px 0;
+      border-color: transparent #000000 transparent transparent; }
+    main .ying-yang p {
+      position: absolute; }
+      main .ying-yang p:first-of-type {
+        top: 0px;
+        right: 0;
+        width: 50vw;
+        color: #FFFFFF; }
+      main .ying-yang p:last-of-type {
+        bottom: 68px;
+        left: 0;
+        max-width: 400px;
+        color: #000000;
+        font-size: 1.1rem; }
+  main .articles {
+    margin-top: -20px; }
+    main .articles h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 20px;
+      font-weight: 200; }
+    main .articles article {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 15px 0; }
+      main .articles article p {
+        text-align: center; }
+      main .articles article .picture {
+        position: relative;
+        background: url(../img/sample.jpg) top center no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 300px;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.5) inset; }
+        main .articles article .picture .likes {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          border: 2px solid #FFFFFF;
+          padding: 5px 12px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.4);
+          font-size: .9rem; }
+        main .articles article .picture h2 {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          font-size: .8rem;
+          font-weight: 200; }
+      main .articles article .about {
+        text-align: center;
+        width: 45%;
+        margin-top: 35px; }
+        main .articles article .about p {
+          margin-bottom: 65px; }
+  main .explore {
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF; }
+    main .explore div {
+      width: 300px;
+      padding: 20px;
+      box-shadow: 1px 1px 5px #9E9E9E;
+      margin-top: 40px;
+      margin-bottom: 70px; }
+      main .explore div button {
+        background: #097774;
+        border: transparent;
+        color: #FFFFFF;
+        width: 100%;
+        height: 35px;
+        margin-top: 16px;
+        font-weight: 900; }
+        main .explore div button:hover {
+          background: #E8E8E8;
+          color: #097774; }
+  main .contact-block {
+    padding: 40px 2%; }
+    main .contact-block .subscribe {
+      justify-content: flex-end;
+      margin-top: 12px; }
+      main .contact-block .subscribe input {
+        margin-left: 30px; }
+
+.subscribe {
+  display: flex;
+  align-items: center; }
+  .subscribe p {
+    font-size: 1.5rem; }
+  .subscribe input {
+    height: 40px;
+    width: 160px;
+    background: #F3F3F3;
+    border: 1px solid #000000;
+    padding: 0 15px;
+    margin-right: 20px;
+    color: #000000;
+    font-size: 0.8rem;
+    font-family: inherit; }
+    .subscribe input::placeholder {
+      color: inherit;
+      font-size: inherit; }
+  .subscribe button {
+    height: 40px;
+    padding: 0 15px;
+    background: #097774;
+    color: #FFFFFF;
+    border: transparent;
+    font-family: inherit;
+    font-weight: 900; }
+    .subscribe button:hover {
+      background: #E8E8E8;
+      color: #097774; }
+
+footer {
+  background: #FFFFFF;
+  color: #9E9E9E; }
+  footer .main-info {
+    display: flex;
+    margin: 120px 0 100px; }
+    footer .main-info > div {
+      width: 25%;
+      padding-right: 30px; }
+      footer .main-info > div p {
+        padding-bottom: 5px; }
+        footer .main-info > div p:first-child {
+          font-weight: 600;
+          margin-bottom: 20px;
+          color: #000000;
+          font-size: .9rem; }
+      footer .main-info > div:nth-child(2) p:nth-child(2) {
+        font-style: italic; }
+      footer .main-info > div:nth-child(2) p:nth-child(3) {
+        color: #E8E8E8;
+        font-style: normal; }
+      footer .main-info > div .subscribe {
+        justify-content: flex-start; }
+  footer .end-block {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #F0F0F0;
+    padding: 10px 0; }
+    footer .end-block p {
+      flex-grow: 20; }
+    footer .end-block a {
+      text-decoration: none;
+      flex-grow: 1;
+      text-align: right;
+      color: #000000; }
+
+/*# sourceMappingURL=style.css.map */
